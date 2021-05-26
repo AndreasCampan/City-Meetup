@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/City-Meetup/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/City-Meetup/static/js/main.904b6436.chunk.js",
+    "main.js.map": "/City-Meetup/static/js/main.904b6436.chunk.js.map",
+    "runtime-main.js": "/City-Meetup/static/js/runtime-main.fb9cb3c8.js",
+    "runtime-main.js.map": "/City-Meetup/static/js/runtime-main.fb9cb3c8.js.map",
+    "static/js/2.8097cd2c.chunk.js": "/City-Meetup/static/js/2.8097cd2c.chunk.js",
+    "static/js/2.8097cd2c.chunk.js.map": "/City-Meetup/static/js/2.8097cd2c.chunk.js.map",
+    "static/js/3.bcbf681e.chunk.js": "/City-Meetup/static/js/3.bcbf681e.chunk.js",
+    "static/js/3.bcbf681e.chunk.js.map": "/City-Meetup/static/js/3.bcbf681e.chunk.js.map",
+    "index.html": "/City-Meetup/index.html",
+    "service-worker.js": "/City-Meetup/service-worker.js",
+    "service-worker.js.map": "/City-Meetup/service-worker.js.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/City-Meetup/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.8097cd2c.chunk.js.LICENSE.txt": "/City-Meetup/static/js/2.8097cd2c.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/City-Meetup/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb9cb3c8.js",
+    "static/js/2.8097cd2c.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.904b6436.chunk.js"
+  ]
+}
