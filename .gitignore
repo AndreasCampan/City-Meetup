@@ -2,11 +2,20 @@
 
 # dependencies
 /node_modules
+
 /.pnp
 .pnp.js
+jspm_packages
+
+# Serverless Directories
+.serverless
+
+#env_var
+config.json
 
 # testing
 /coverage
+/test
 
 # production
 /build
