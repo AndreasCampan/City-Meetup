@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import EventList from './EventList';
+import CitySearch from './CitySearch';
+import NumberofEvents from './NumberofEvents';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          How long do modifications take?
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <EventList />
+      <CitySearch />
+      <NumberofEvents />
     </div>
   );
 }
