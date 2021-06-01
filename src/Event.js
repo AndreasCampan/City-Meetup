@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Event extends Component {
 
@@ -7,9 +7,13 @@ class Event extends Component {
   }
 
   render() {
-    return <div className="eventbox">
-      <button className="collapse"></button>
-    </div>;
+    return (
+      <>
+        <div className="eventbox">
+          <button className="collapse"></button>
+        </div>
+      </>
+    );
   }
 }
 export default Event;
