@@ -7,7 +7,7 @@ import { mockData } from '../mock-data';
 describe('<EventList /> component', () => {
   let createdEvent;
   beforeAll(() => {
-    createdEvent = shallow(<Event />)
+    createdEvent = shallow(<Event event={mockData[0]} />)
   });
 
   test('render event list', () => {
@@ -16,7 +16,7 @@ describe('<EventList /> component', () => {
   });
 
   test('render the event show more button', () => {
-    expect(createdEvent.find('.collapse')).toHaveLength(1);
+    expect(createdEvent.find('.details-btn')).toHaveLength(1);
   });
 
   test('show more button should be false on render', () => {
@@ -24,14 +24,14 @@ describe('<EventList /> component', () => {
   });
 
   test('if showMore is false, simulates a click showing more details', () => {
-    const changeState = createdEvent.setState({showMore: true});
-    createdEvent.find('.collapse').simulate('click', changeState);
+    const changeState = createdEvent.state({showMore: true});
+    createdEvent.find('.details-btn').simulate('click', changeState);
     expect(createdEvent.state('showMore')).toBe(true);
   });
 
   test('if showMore is true, simulates a click showing less details', () => {
-    const changeState = createdEvent.setState({showMore: false});
-    createdEvent.find('.collapse').simulate('click', changeState);
+    const changeState = createdEvent.state({showMore: false});
+    createdEvent.find('.details-btn').simulate('click', changeState);
     expect(createdEvent.state('showMore')).toBe(false);
-  })
+  });
 });
