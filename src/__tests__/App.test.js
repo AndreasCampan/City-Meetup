@@ -47,9 +47,9 @@ describe('<App /> integration', () => {
     const AppWrapper = mount(<App />);
     const CitySearchWrapper = AppWrapper.find(CitySearch);
     CitySearchWrapper.setState({ query: 'London, UK' });
+    const allEvents = await getEvents();
     const query = CitySearchWrapper.state('query');
     await CitySearchWrapper.instance().handleItemClicked(query);
-    const allEvents = await getEvents();
     const eventsToShow = allEvents.filter(event => event.location === query);
     expect(AppWrapper.state('eventsLocFilt')).toEqual(eventsToShow);
     AppWrapper.unmount();
