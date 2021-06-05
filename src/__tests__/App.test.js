@@ -43,20 +43,17 @@ describe('<App /> integration', () => {
     AppWrapper.unmount();
   });
 
-  // test('get list of events matching the city selected by user', async () => {
-  //   const AppWrapper = mount(<App />);
-  //   const CitySearchWrapper = AppWrapper.find(CitySearch);
-  //   const locations = extractLocations(mockData);
-  //   CitySearchWrapper.setState({ suggestions: locations });
-  //   const suggestions = CitySearchWrapper.state('suggestions');
-  //   const selectedIndex = Math.floor(Math.random() * (suggestions.length));
-  //   const selectedCity = suggestions[selectedIndex];
-  //   await CitySearchWrapper.instance().handleItemClicked(selectedCity);
-  //   const allEvents = await getEvents();
-  //   const eventsToShow = allEvents.filter(event => event.location === selectedCity);
-  //   expect(AppWrapper.state('eventsLocFilt')).toEqual(eventsToShow);
-  //   AppWrapper.unmount();
-  // });
+  test('get list of events matching the city selected by user', async () => {
+    const AppWrapper = mount(<App />);
+    const CitySearchWrapper = AppWrapper.find(CitySearch);
+    CitySearchWrapper.setState({ query: 'London, UK' });
+    const query = CitySearchWrapper.state('query');
+    await CitySearchWrapper.instance().handleItemClicked(query);
+    const allEvents = await getEvents();
+    const eventsToShow = allEvents.filter(event => event.location === query);
+    expect(AppWrapper.state('eventsLocFilt')).toEqual(eventsToShow);
+    AppWrapper.unmount();
+  });
 
   test('get all events when user selects "See all cities"', async () => {
     const AppWrapper = mount(<App />);
