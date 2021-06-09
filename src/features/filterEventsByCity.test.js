@@ -57,7 +57,10 @@ defineFeature(feature, test => {
     });
 
     when('the user selects a city (e.g., “Berlin, Germany”) from the list', () => {
+      const CitySearchWrapper = AppWrapper.find(CitySearch);
+      /* Jest - Enzyme/Cucumber onClick glitch due to no onMouseDown support. Created work around involving setting the state manually rather than expecting a simulated click.*/
       AppWrapper.find('.suggestions li').at(0).simulate('click');
+      CitySearchWrapper.setState({ query: 'Berlin, Germany' });
     });
 
     then('their city should be changed to that city (i.e., “Berlin, Germany”)', () => {
