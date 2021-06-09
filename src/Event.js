@@ -15,10 +15,17 @@ class Event extends Component {
     }
   }
 
+  showText() {
+    if(this.state.showMore === false) {
+     return "Show More"
+    } else {
+      return "Show Less";
+    }
+  }
+
   desc(event) {
     if(this.state.showMore === false) {
      return ""
-
     } else {
       return event.description;
     }
@@ -34,7 +41,7 @@ class Event extends Component {
           <p><b>Start Time:</b> {event.start.dateTime}</p>
           <p><b>Location:</b> {event.location}</p>
           <p className="description">{this.desc(event)}</p>
-          <button className="details-btn" onClick={() => {this.showMore(event)}}>Show More</button>
+          <button className="details-btn" onClick={() => {this.showMore(event)}}>{this.showText()}</button>
         </div>
       </>
     );
