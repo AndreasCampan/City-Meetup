@@ -57,6 +57,7 @@ describe('<CitySearch /> component', () => {
   test("selecting a suggestion should change query state", () => {
     CitySearchWrapper.setState({ query: 'Berlin' });
     const suggestions = CitySearchWrapper.state('suggestions');
+    /* Jest - Enzyme/Cucumber onClick glitch due to no onMouseDown support. Created work around involving setting the state manually rather than expecting a simulated click.*/
     CitySearchWrapper.find('li').at(0).simulate('click');
     CitySearchWrapper.setState({ query: 'Berlin, Germany' });
     expect(CitySearchWrapper.state("query")).toBe(suggestions[0]);
@@ -72,6 +73,7 @@ describe('<CitySearch /> component', () => {
       query: 'Berlin',
       showSuggestions: undefined
     });
+    /* Jest - Enzyme/Cucumber onClick glitch due to no onMouseDown support. Created work around involving setting the state manually rather than expecting a simulated click.*/
     CitySearchWrapper.find('.suggestions li').at(0).simulate('click');
     CitySearchWrapper.find('.city').simulate('blur');
     expect(CitySearchWrapper.state('showSuggestions')).toBe(false);

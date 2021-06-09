@@ -8,11 +8,11 @@ describe('show/hide an event details', () => {
   beforeAll(async () => {
     jest.setTimeout(30000);
     browser = await puppeteer.launch(
-    //   {
-    //   headless: false,
-    //   slowMo: 250,
-    //   ignoreDefaultArgs: ['--disable-extensions']
-    // }
+     /* These options allow for browser viewing of the tests{
+        headless: false,
+        slowMo: 250,
+        ignoreDefaultArgs: ['--disable-extensions']
+      } */
     );
     page = await browser.newPage();
     await page.goto('http://localhost:3000/');
