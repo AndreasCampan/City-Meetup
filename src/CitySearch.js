@@ -46,7 +46,7 @@ class CitySearch extends Component {
           type="text"
           className="city"
           value={this.state.query}
-          placeholder="Search for a City"
+          placeholder="Search by City"
           onChange={this.handleInputChanged}
           onFocus={() => { this.listUpdate(); this.setState({showSuggestions: true }) }}
           onBlur={() => { this.setState({showSuggestions: false }) }}
