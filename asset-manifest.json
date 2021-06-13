@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/City-Meetup/static/css/main.68645257.chunk.css",
-    "main.js": "/City-Meetup/static/js/main.1d126115.chunk.js",
-    "main.js.map": "/City-Meetup/static/js/main.1d126115.chunk.js.map",
+    "main.js": "/City-Meetup/static/js/main.23007fe4.chunk.js",
+    "main.js.map": "/City-Meetup/static/js/main.23007fe4.chunk.js.map",
     "runtime-main.js": "/City-Meetup/static/js/runtime-main.32430b56.js",
     "runtime-main.js.map": "/City-Meetup/static/js/runtime-main.32430b56.js.map",
     "static/js/2.e16fd62b.chunk.js": "/City-Meetup/static/js/2.e16fd62b.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.32430b56.js",
     "static/js/2.e16fd62b.chunk.js",
     "static/css/main.68645257.chunk.css",
-    "static/js/main.1d126115.chunk.js"
+    "static/js/main.23007fe4.chunk.js"
   ]
 }
