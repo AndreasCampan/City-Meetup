@@ -7,12 +7,15 @@ import NumberofEvents from './NumberofEvents';
 import { extractLocations, getEvents, numFilter } from './api';
 
 class LoginView extends Component {
-  state = {
-    events: [],
-    locations: [],
-    eventsToShow: 32,
-    eventsLocFilt: [],
-    numFilteredList: []
+  constructor() {
+    super();
+    this.state = {
+      events: [],
+      locations: [],
+      eventsToShow: 32,
+      eventsLocFilt: [],
+      numFilteredList: []
+    }
   }
 
   componentDidMount() {

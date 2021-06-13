@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import './nprogress.css';
+
 import { BrowserRouter as Router, Route, Redirect, Link } from "react-router-dom";
 
 import LoginView from './LoginView';
@@ -17,7 +17,7 @@ class App extends Component {
 
     return (
       <Router>
-        <Route path="/" render={() => {
+        <Route exact path="/City-Meetup" render={() => {
           return (
             <>
               <NavView />
@@ -26,7 +26,7 @@ class App extends Component {
           )
         }} />
 
-        <Route path="/login" render={() => {
+        <Route exact path="/City-Meetup/Events" render={() => {
           return (
             <>
               <NavView />
