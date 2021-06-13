@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/City-Meetup/static/css/main.68645257.chunk.css",
-    "main.js": "/City-Meetup/static/js/main.7f9aeb77.chunk.js",
-    "main.js.map": "/City-Meetup/static/js/main.7f9aeb77.chunk.js.map",
-    "runtime-main.js": "/City-Meetup/static/js/runtime-main.32430b56.js",
-    "runtime-main.js.map": "/City-Meetup/static/js/runtime-main.32430b56.js.map",
-    "static/js/2.53e1473b.chunk.js": "/City-Meetup/static/js/2.53e1473b.chunk.js",
-    "static/js/2.53e1473b.chunk.js.map": "/City-Meetup/static/js/2.53e1473b.chunk.js.map",
-    "static/js/3.753b61f9.chunk.js": "/City-Meetup/static/js/3.753b61f9.chunk.js",
-    "static/js/3.753b61f9.chunk.js.map": "/City-Meetup/static/js/3.753b61f9.chunk.js.map",
+    "main.css": "/City-Meetup/static/css/main.f71de2c7.chunk.css",
+    "main.js": "/City-Meetup/static/js/main.bfa84e1e.chunk.js",
+    "main.js.map": "/City-Meetup/static/js/main.bfa84e1e.chunk.js.map",
+    "runtime-main.js": "/City-Meetup/static/js/runtime-main.5762a504.js",
+    "runtime-main.js.map": "/City-Meetup/static/js/runtime-main.5762a504.js.map",
+    "static/js/2.d7fe3885.chunk.js": "/City-Meetup/static/js/2.d7fe3885.chunk.js",
+    "static/js/2.d7fe3885.chunk.js.map": "/City-Meetup/static/js/2.d7fe3885.chunk.js.map",
+    "static/js/3.5ab0f3f9.chunk.js": "/City-Meetup/static/js/3.5ab0f3f9.chunk.js",
+    "static/js/3.5ab0f3f9.chunk.js.map": "/City-Meetup/static/js/3.5ab0f3f9.chunk.js.map",
     "index.html": "/City-Meetup/index.html",
     "service-worker.js": "/City-Meetup/service-worker.js",
     "service-worker.js.map": "/City-Meetup/service-worker.js.map",
-    "static/css/main.68645257.chunk.css.map": "/City-Meetup/static/css/main.68645257.chunk.css.map",
-    "static/js/2.53e1473b.chunk.js.LICENSE.txt": "/City-Meetup/static/js/2.53e1473b.chunk.js.LICENSE.txt",
+    "static/css/main.f71de2c7.chunk.css.map": "/City-Meetup/static/css/main.f71de2c7.chunk.css.map",
+    "static/js/2.d7fe3885.chunk.js.LICENSE.txt": "/City-Meetup/static/js/2.d7fe3885.chunk.js.LICENSE.txt",
     "static/media/App.css": "/City-Meetup/static/media/city-bg.f6dd10ec.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.32430b56.js",
-    "static/js/2.53e1473b.chunk.js",
-    "static/css/main.68645257.chunk.css",
-    "static/js/main.7f9aeb77.chunk.js"
+    "static/js/runtime-main.5762a504.js",
+    "static/js/2.d7fe3885.chunk.js",
+    "static/css/main.f71de2c7.chunk.css",
+    "static/js/main.bfa84e1e.chunk.js"
   ]
 }
