@@ -19,7 +19,7 @@ class LoginView extends Component {
   }
 
   componentDidMount() {
-    this.mounted= true;
+    this.mounted = true;
     getEvents()
     .then((events) => {
       if (this.mounted) {

@@ -11,8 +11,7 @@ class NavView extends Component {
         <div className="title">City Meetup</div>
         <div>
           <Link to="/City-Meetup" className="links">Home</Link>
-          <Link to="/City-Meetup/Events" className="links">Events</Link>
-          
+          <Link to="/City-Meetup/Events" className="links">Events</Link>     
         </div>
       </nav>
     );

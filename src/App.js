@@ -25,7 +25,7 @@ class App extends Component {
             </>
           )
         }} />
-
+        
         <Route exact path="/City-Meetup/Events" render={() => {
           return (
             <>
