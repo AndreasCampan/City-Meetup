@@ -6,6 +6,7 @@ import CitySearch from './CitySearch';
 import NumberofEvents from './NumberofEvents';
 import { extractLocations, getEvents, numFilter } from './api';
 
+
 class App extends Component {
   constructor() {
     super();
@@ -14,7 +15,8 @@ class App extends Component {
       locations: [],
       eventsToShow: 32,
       eventsLocFilt: [],
-      numFilteredList: []
+      numFilteredList: [],
+      errorText: ''
     }
   }
 
@@ -45,10 +47,33 @@ class App extends Component {
   }
 
   updateEventNum = (num) => {
+    if (num >= 0 & num <= 50) {
+      this.setState({
+        errorText: ''
+      })
+     } else if(!num) {
+     this.setState({
+       errorText: 'Please enter a number'
+     })
+    } else if (num > 50) {
+      this.setState({
+        errorText: 'Max 50 events'
+      })
+    } else {
+      this.setState({
+        errorText: 'Please enter a valid number'
+      })
+    }
+
     if(this.state.eventsLocFilt.length !== 0){
       this.setState({
         eventsToShow: num,
         numFilteredList: numFilter(this.state.eventsLocFilt, num)
+      });
+    } else if(num > 50) {
+      this.setState({
+        eventsToShow: num,
+        numFilteredList: numFilter(this.state.events, num)
       });
     } else {
       this.setState({
@@ -64,7 +89,7 @@ class App extends Component {
       <div className="content">
         <div className="filters">
           <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
-          <NumberofEvents eventsToShow={this.state.eventsToShow} updateEventNum={this.updateEventNum}/>
+          <NumberofEvents eventsToShow={this.state.eventsToShow} updateEventNum={this.updateEventNum} text={this.state.errorText}/>
         </div>
         <div className="eventbox">
           <EventList events={this.state.numFilteredList}/>

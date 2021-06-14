@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -57,6 +56,7 @@ body {
 .suggestions {
   width: 250px;
   position: absolute;
+  top: 40px;
   z-index: 2;
   align-self: center;
   margin: 0;
@@ -81,9 +81,23 @@ body {
 }
 
 .numberOfEvents {
-  width: 400px;
-  margin: 0;
-  text-align: left;
+  width: 200px;
+}
+
+.numberInput {
+  text-align: center;
+  width: 40px;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 8px 5px 8px 5px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 38px;
 }
 
 /* Event styles */
@@ -97,17 +111,7 @@ p {
   margin: 5px 0;
 }
 
-input[type="text"],
-input[type="number"] {
-  padding: 8px 6px 8px 10px;
-  border-radius: 4px;
-  outline: none;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  line-height: 20px;
-  align-self: center;
-  height: 38px;
-}
+
 
 .event {
   padding: 10px 10px 35px;
@@ -116,6 +120,12 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   position: relative;
+}
+
+.Alert {
+  text-align: center;
+  line-height: 1.2em;
+  height: 1.2em;
 }
 
 .details-btn {
@@ -153,11 +163,6 @@ input[type="number"] {
   grid-gap: 20px;
   padding: 20px;
   font-family: sans-serif;
-}
-
-.Alert {
-  position: fixed;
-  top: 20px;
 }
 
 .data-vis-wrapper {
@@ -227,7 +232,7 @@ input[type="number"] {
   font-family: "Roboto";
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
   .data-vis-wrapper {
     flex-direction: row;
   }
@@ -238,3 +243,16 @@ input[type="number"] {
     margin: 0 auto;
   }
 }
+
+@media all and (max-width: 500px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 40px;
+  }
+}
+

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { ErrorAlert} from './Alert'; 
 
 function NumberofEvents(props) {
   const [ eventsToShow, setEventsToShow ] = useState(props.eventsToShow);
+  const text = props.text
 
   const handleChange = (event) => {
 
@@ -20,10 +22,11 @@ function NumberofEvents(props) {
           <input 
           type="text" 
           id="number" 
+          className="numberInput"
           value={eventsToShow}
-          placeholder="Type a number" 
+          placeholder="#" 
           onChange={handleChange} />
-       
+       <ErrorAlert text={text}/>
       </div>
     )
 }
