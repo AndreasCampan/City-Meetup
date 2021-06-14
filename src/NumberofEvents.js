@@ -7,9 +7,9 @@ function NumberofEvents(props) {
 
   const handleChange = (event) => {
 
-    if(event.target.value !== 0) {
+    if(event.target.value === "") {
       setEventsToShow(event.target.value);
-      props.updateEventNum(event.target.value);
+      props.updateEventNum("NoNum");
     } else {
       setEventsToShow(event.target.value);
       props.updateEventNum(event.target.value)

@@ -47,17 +47,17 @@ class App extends Component {
   }
 
   updateEventNum = (num) => {
-    if (num >= 0 & num <= 50) {
+    if (num >= 0 & num <= 60) {
       this.setState({
         errorText: ''
       })
-     } else if(!num) {
+     } else if(num === "NoNum") {
      this.setState({
        errorText: 'Please enter a number'
      })
-    } else if (num > 50) {
+    } else if (num > 60) {
       this.setState({
-        errorText: 'Max 50 events'
+        errorText: 'Max 60 events'
       })
     } else {
       this.setState({
@@ -70,10 +70,10 @@ class App extends Component {
         eventsToShow: num,
         numFilteredList: numFilter(this.state.eventsLocFilt, num)
       });
-    } else if(num > 50) {
+    } else if(num > 60) {
       this.setState({
         eventsToShow: num,
-        numFilteredList: numFilter(this.state.events, num)
+        numFilteredList: numFilter(this.state.events, 0)
       });
     } else {
       this.setState({
