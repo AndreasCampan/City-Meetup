@@ -19,7 +19,6 @@ body {
   height: 100vh;
 }
 
-
 .content {
   position: absolute;
   display: flex;
@@ -28,7 +27,6 @@ body {
   align-items: center;
   background-color: #ffffff;
   width: 100%;
-  top: 600px;
 }
 
 /*  filter styles */
@@ -87,6 +85,7 @@ body {
   margin: 0;
   text-align: left;
 }
+
 /* Event styles */
 
 ul {
