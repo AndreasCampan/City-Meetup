@@ -7,25 +7,205 @@
 }
 
 body {
-  background-color: #f1faee;
+  background-color: #494949;
 }
 
-.App { 
+#app { 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  max-width:100%;
 }
 
-.content {
-  position: absolute;
+/* Navigation */
+.navbar {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+  text-align: right;
+  padding: 0 25px;
+  top: 0px;
+  width: 100vw;
+  max-width: 100%;
+  height: 60px;
+  background: #d61313;
+  z-index: 10;
+}
+
+.Nav-title {
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.6em;
+  font-weight: 900;
+  color: #ffffff;
+  padding-bottom: 5px;
+}
+
+a.inner-links, a:visited.inner-links {
+  color: #d61313;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+a:hover.inner-links {
+  color: #365c89;
+  font-weight: 700;
+}
+
+.links {
+  padding: 5px 40px;
+  margin: 5px;
+  font-size: 1.6em;
+  font-weight: 700;
+  border-left: 2px solid rgb(255, 204, 204);
+  border-right: 2px solid rgb(255, 204, 204);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: inset 0px -3px 4px 0px rgb(255, 204, 204);
+}
+
+.links:hover {
+  padding: 5px 40px;
+  margin: 5px;
+  font-size: 1.6em;
+  font-weight: 700;
+  border-left: 2px solid #3b3b3b;
+  border-right: 2px solid #383838;
+  color: #3d3d3d;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 7px 2px rgb(151, 0, 0);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  max-width: 1600px;
+  background-color: #ffffff;
+  text-align: center;
+  border-top: 5px solid #365c89;
+  padding: 10px;
+}
+
+.logos{
+  width: 100%;
+  max-width: 1600px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.logo1, .logo2 {
+  width: 50px;
+  height: 50px;
+  margin: 10px 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.logo1:hover, .logo2:hover {
+  transform: scale(1.25);
+}
+
+/* Home Page */
+.section-city-bg{
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  max-width:100%;
+  top: 60px;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  background-color: #494949;
+}
+
+.city-bg {
+  width: 100vw;
+  max-width: 1600px;
+  height: 620px;
+  background-image: url(./img/City-Meet-BG-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  max-width: 1600px;
   width: 100%;
+  margin-top: 680px;
+  border-top: 5px solid #365c89;
+}
+
+.title-main {
+  color:#d61313;
+  margin: 30px 20px;
+  font-size: 2.2em;
+}
+
+.section-2, .section-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: top;
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px 0;
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 120px;
+}
+
+.pic-1 {
+  width: 400px;
+  height: 330px;
+  background: url('./img/tdd-circle-of-life.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pic-2 {
+  width: 500px;
+  height: 365px;
+  background: url('./img/OAuth.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-1 {
+  color:#d61313;
+  margin: 15px;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.para-1 {
+  width: 450px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.para-2 {
+  width: 440px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.para-3 {
+  width: 600px;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /*  filter styles */
@@ -33,16 +213,21 @@ body {
 .filters {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
-  margin: 40px;
+  padding: 0 0 50px;
+  background-color: #fff;
 }
 
-.eventbox {
+.title-box {
+  text-align: center;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 1em;
 }
 
 .CitySearch {
@@ -56,10 +241,8 @@ body {
 .suggestions {
   width: 250px;
   position: absolute;
-  top: 40px;
   z-index: 2;
   align-self: center;
-  margin: 0;
   font-size: 14px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
@@ -100,18 +283,25 @@ input[type="text"], input[type="number"] {
   height: 38px;
 }
 
-/* Event styles */
+/* Event Page */
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 60px;
+}
 
 ul {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
   padding: 0;
   list-style: none;
 }
-
-p {
-  margin: 5px 0;
-}
-
-
 
 .event {
   padding: 10px 10px 35px;
@@ -125,18 +315,19 @@ p {
 .Alert {
   text-align: center;
   line-height: 1.2em;
-  height: 1.2em;
+  height: 1.4em;
 }
 
 .details-btn {
   position: absolute;
-  right: 5px;
-  bottom: 5px;
+  right: 10px;
+  bottom: 10px;
   padding: 5px 8px;
   border-radius: 4px;
   outline: none;
   cursor: pointer;
 }
+
 
 .name {
   font-size: 18px;
@@ -201,12 +392,15 @@ p {
   border-radius: 2px;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 .google-btn:hover {
   box-shadow: 0 0 6px #4285f4;
 }
+
 .google-btn:active {
   background: #1669f2;
 }
+
 .google-icon-wrapper {
   position: absolute;
   margin-top: 1px;
@@ -216,6 +410,7 @@ p {
   border-radius: 2px;
   background-color: #fff;
 }
+
 .google-icon {
   position: absolute;
   margin-top: 11px;
@@ -223,6 +418,7 @@ p {
   width: 18px;
   height: 18px;
 }
+
 .btn-text {
   float: right;
   margin: 11px 11px 0 0;

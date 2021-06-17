@@ -1,9 +1,9 @@
-# City-Meet
+# City-Meetup
 
 
 # Purpose
 
-Welcome to my meetup app called **City-Meet** ! My objective is to build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application will use the Google Calendar API to fetch upcoming events.
+Welcome to my meetup app called **City-Meetup** ! My objective is to build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application will use the Google Calendar API to fetch upcoming events.
 
 # What will it do?
 The web application will allow users to view upcoming events and the event details which will be shown based on their search criteria (city, range, number of events). The app will also show events that were cached when the user is offline.

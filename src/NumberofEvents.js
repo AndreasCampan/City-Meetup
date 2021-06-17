@@ -18,6 +18,7 @@ function NumberofEvents(props) {
 
     return (
       <div className="numberOfEvents">
+        <ErrorAlert text={text}/>
         <label htmlFor="number">Events per page: </label>
           <input 
           type="text" 
@@ -26,7 +27,6 @@ function NumberofEvents(props) {
           value={eventsToShow}
           placeholder="#" 
           onChange={handleChange} />
-       <ErrorAlert text={text}/>
       </div>
     )
 }
