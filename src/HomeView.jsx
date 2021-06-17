@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component} from 'react';
 import './App.css';
 
 
@@ -16,7 +16,6 @@ class HomeView extends Component {
   }
 
   render() {
-    
     return (
       <>
         <section className="section-city-bg">

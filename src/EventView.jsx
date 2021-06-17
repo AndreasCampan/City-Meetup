@@ -85,7 +85,6 @@ class EventView extends Component {
   }
 
   render() {
-
     return (
       <div className="event-content">
         <div className="title-box">
