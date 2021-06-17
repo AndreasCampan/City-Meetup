@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/City-Meetup/static/css/main.db620092.chunk.css",
-    "main.js": "/City-Meetup/static/js/main.83ee8a34.chunk.js",
-    "main.js.map": "/City-Meetup/static/js/main.83ee8a34.chunk.js.map",
-    "runtime-main.js": "/City-Meetup/static/js/runtime-main.73cb62d1.js",
-    "runtime-main.js.map": "/City-Meetup/static/js/runtime-main.73cb62d1.js.map",
-    "static/js/2.76ca011a.chunk.js": "/City-Meetup/static/js/2.76ca011a.chunk.js",
-    "static/js/2.76ca011a.chunk.js.map": "/City-Meetup/static/js/2.76ca011a.chunk.js.map",
-    "static/js/3.938dcdab.chunk.js": "/City-Meetup/static/js/3.938dcdab.chunk.js",
-    "static/js/3.938dcdab.chunk.js.map": "/City-Meetup/static/js/3.938dcdab.chunk.js.map",
+    "main.css": "/City-Meetup/static/css/main.31d2d3b9.chunk.css",
+    "main.js": "/City-Meetup/static/js/main.16696296.chunk.js",
+    "main.js.map": "/City-Meetup/static/js/main.16696296.chunk.js.map",
+    "runtime-main.js": "/City-Meetup/static/js/runtime-main.5762a504.js",
+    "runtime-main.js.map": "/City-Meetup/static/js/runtime-main.5762a504.js.map",
+    "static/js/2.22d6885e.chunk.js": "/City-Meetup/static/js/2.22d6885e.chunk.js",
+    "static/js/2.22d6885e.chunk.js.map": "/City-Meetup/static/js/2.22d6885e.chunk.js.map",
+    "static/js/3.5ab0f3f9.chunk.js": "/City-Meetup/static/js/3.5ab0f3f9.chunk.js",
+    "static/js/3.5ab0f3f9.chunk.js.map": "/City-Meetup/static/js/3.5ab0f3f9.chunk.js.map",
     "index.html": "/City-Meetup/index.html",
     "service-worker.js": "/City-Meetup/service-worker.js",
     "service-worker.js.map": "/City-Meetup/service-worker.js.map",
-    "static/css/main.db620092.chunk.css.map": "/City-Meetup/static/css/main.db620092.chunk.css.map",
-    "static/js/2.76ca011a.chunk.js.LICENSE.txt": "/City-Meetup/static/js/2.76ca011a.chunk.js.LICENSE.txt"
+    "static/css/main.31d2d3b9.chunk.css.map": "/City-Meetup/static/css/main.31d2d3b9.chunk.css.map",
+    "static/js/2.22d6885e.chunk.js.LICENSE.txt": "/City-Meetup/static/js/2.22d6885e.chunk.js.LICENSE.txt",
+    "static/media/AC-Logo.7d2b5664.png": "/City-Meetup/static/media/AC-Logo.7d2b5664.png",
+    "static/media/App.css": "/City-Meetup/static/media/tdd-circle-of-life.f9a296f6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.73cb62d1.js",
-    "static/js/2.76ca011a.chunk.js",
-    "static/css/main.db620092.chunk.css",
-    "static/js/main.83ee8a34.chunk.js"
+    "static/js/runtime-main.5762a504.js",
+    "static/js/2.22d6885e.chunk.js",
+    "static/css/main.31d2d3b9.chunk.css",
+    "static/js/main.16696296.chunk.js"
   ]
 }
