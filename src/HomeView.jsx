@@ -45,7 +45,7 @@ class HomeView extends Component {
               <p className="para-2">
                 The application even works offline, retrieving and displaying stored data from a previous session.
                 <br/>
-                To find out more about OAuth, click <a className="inner-links" href="https://auth0.com/docs/protocols/protocol-oauth2" target="_blank" rel="noreferrer" alt="A link directing the user to Oauth documentation">here</a>. 
+                Check out more on <a className="inner-links" href="https://auth0.com/docs/protocols/protocol-oauth2" target="_blank" rel="noreferrer" alt="A link directing the user to Oauth documentation">OAuth</a>. 
               </p>
             </div>
             <div className="pic-2"></div>

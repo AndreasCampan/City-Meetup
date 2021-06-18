@@ -20,6 +20,7 @@ class App extends Component {
             <>
               <NavView />
               <HomeView />
+
               <FooterView />
             </>
           )
