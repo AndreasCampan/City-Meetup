@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { mockData } from './mock-data';
 
-
 /* This function takes an events array, then uses map to create a new array with only locations. It will also remove all duplicates by creating another new array using the spread operator and spreading a Set.The Set will remove all duplicates from the array. */
 
 const checkToken = async (accessToken) => {
@@ -9,7 +8,7 @@ const checkToken = async (accessToken) => {
     `https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=${accessToken}`
   )
   .then((res) => res.json())
-  .catch((error) => error.json());
+  .catch((error) => console.log(error))
   return result;
 }
 
@@ -21,12 +20,13 @@ const getToken = async (code) => {
     .then((res) => {
       return res.json();
     })
-    .catch((error) => error);
+    .catch((error) => console.log(error));
 
   access_token && localStorage.setItem("access_token", access_token);
 
   return access_token;
 };
+
 
 const removeQuery = () => {
   if (window.history.pushState && window.location.pathname) {
@@ -76,7 +76,7 @@ export const getAccessToken = async () => {
   if(!accessToken || tokenCheck.error) {
     await localStorage.removeItem("access_token");
     const searchParams = new URLSearchParams(window.location.search);
-    const code = await searchParams.get("code");
+    const code = await searchParams.get("code")
     if(!code) {
       const results = await axios.get("https://cq9p1e4xp4.execute-api.ca-central-1.amazonaws.com/dev/api/get-auth-url");
       const { authUrl } = results.data;

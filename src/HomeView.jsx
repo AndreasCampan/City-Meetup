@@ -6,13 +6,27 @@ class HomeView extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0)
-    let background = document.querySelector('.city-bg');
+    let background = document.querySelector('.section-city-bg');
+
     window.addEventListener('scroll', () => {
-    background.style.opacity = `${1 - window.pageYOffset * 0.0015}`;
-    if(window.pageYOffset > 300){
-      return background.style.opacity = '0.4';
-    }
+      background.style.opacity = `${1 - window.pageYOffset * 0.0015}`;
+      console.log('home view mount')
+      if(window.pageYOffset > 300){
+        background.style.opacity = '0.4';
+      }
     });
+    this.hidebutton();
+  }
+
+  componentDidUpdate(){
+   this.hidebutton();
+  }
+
+  hidebutton() {
+    if(this.props.fullNav === true) {
+      const signup = document.querySelector(".signup");
+      signup.style.display = "none";
+    }
   }
 
   render() {
@@ -25,9 +39,10 @@ class HomeView extends Component {
         <div className="home-content">
           <h2 className="title-main">Events are waiting for You!</h2>
 
+          <button className="signup" onClick={()=>{this.props.login(); this.props.changeNav(); this.hidebutton();}}>Sign In with Google</button>
           <section className="section-2">
             <div className="pic-1"></div>
-            <div>
+            <div className="about-box">
               <h3 className="title-1">About This Site</h3>
               <p className="para-1">This progressive web application (PWA) was built following a test-driven development (TDD) technique and uses serverless technology for backend services. 
               <br/><br/>
@@ -36,7 +51,7 @@ class HomeView extends Component {
           </section>
 
           <section className="section-3">
-            <div>
+            <div className="what-can-you-do-box">
               <h3 className="title-1">What can you do?</h3>
               <p className="para-2">
                 This progressive web application allows you to login using OAuth to view CareerFoundry's upcoming web development events, which can be filtered based on your search criteria.
@@ -52,7 +67,7 @@ class HomeView extends Component {
           </section>
 
           <section className="section-4">
-            <div>
+            <div className="privacy-box">
               <h3 className="title-1">Privacy</h3>
               <p className="para-3">
                 This progressive web application is used specifically for demonstrative and educational purposes and has no commercial intent or use. No personal data is collected or saved and the calendar accessed is not a personal calendar, but pertaining to CareerFoundry's web development events. 

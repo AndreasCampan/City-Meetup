@@ -47,7 +47,6 @@ class CitySearch extends Component {
 
     this.props.updateEvents(suggestion);
   }
-
   
   render() {
     return (
@@ -62,7 +61,7 @@ class CitySearch extends Component {
           onFocus={() => { this.listUpdate(); this.setState({showSuggestions: true }) }}
           onBlur={() => { this.setState({showSuggestions: false }) }}
         />
-        <ul  className="suggestions" style={this.state.showSuggestions ? {}: { display: 'none' }}>
+        <ul className="suggestions" style={this.state.showSuggestions ? {}: { display: 'none' }}>
           {this.state.suggestions.map((suggestion) => (
             <li 
               key={suggestion}

@@ -6,7 +6,6 @@ function NumberofEvents(props) {
   const text = props.text
 
   const handleChange = (event) => {
-
     if(event.target.value === "") {
       setEventsToShow(event.target.value);
       props.updateEventNum("NoNum");
