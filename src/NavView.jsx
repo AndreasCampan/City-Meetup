@@ -44,7 +44,7 @@ class NavView extends Component {
           <div className="mobilebar-three"></div>
         </button>
         <div className="mylinks">
-          <Link to="/City-Meetup" className="links">Home</Link>
+          <Link to="/City-Meetup/" className="links">Home</Link>
           <Link to="/City-Meetup/Events" className="links" id="eventLink">Events</Link>
         </div>
       </nav>

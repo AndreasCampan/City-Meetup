@@ -27,6 +27,13 @@ class App extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
     this.mounted = true;
+    
+    const token = localStorage.getItem("access_token");
+    if(token){
+     this.setState({fullNav: true});
+     this.login();
+    }
+    
     if(window.location.href.indexOf('code') !== -1){
       this.changeNav()
       this.login();
@@ -94,7 +101,7 @@ class App extends Component {
       });
     } else if(num > 60) {
       this.setState({
-        eventsToShow: num,
+        eventsToShow: 0,
         numFilteredList: numFilter(this.state.events, 0)
       });
     } else {
@@ -109,7 +116,7 @@ class App extends Component {
 
     return (
       <Router>
-        <Route exact path="/City-Meetup" render={() => {
+        <Route exact path="/City-Meetup/" render={() => {
           return (
             <>
               <NavView fullNav={this.state.fullNav} />
@@ -123,7 +130,7 @@ class App extends Component {
           return (
             <>
               <NavView fullNav={this.state.fullNav}/>
-              <EventView state={this.state} updateEvents={()=>{this.updateEvents()}} updateEventNum={()=>{this.updateEventNum()}} login={()=>{this.login()}} />
+              <EventView state={this.state} updateEvents={this.updateEvents} updateEventNum={this.updateEventNum} login={this.login} />
             </>
           )
         }} />
