@@ -25,7 +25,7 @@ import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, Res
   render() {
     return (
       <>
-        <h3 className="title-2">Events in each City</h3>
+        <h3 className="title-2">Events in each Location</h3>
         <ResponsiveContainer height={400} width="90%">
           <ScatterChart className="chart2">
             <CartesianGrid />

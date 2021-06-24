@@ -20,7 +20,7 @@ function NumberofEvents(props) {
         <ErrorAlert text={text}/>
         <label htmlFor="number">Events per page: </label>
           <input 
-          type="text" 
+          type="number" 
           id="number" 
           className="numberInput"
           value={eventsToShow}

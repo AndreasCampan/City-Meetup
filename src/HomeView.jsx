@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import './App.css';
-
+import { Link } from 'react-router-dom'
 
 class HomeView extends Component {
 
@@ -25,6 +25,8 @@ class HomeView extends Component {
     if(this.props.fullNav === true) {
       const signup = document.querySelector(".signup");
       signup.style.display = "none"
+      const arrow = document.querySelector(".red-event");
+      arrow.style.display = "flex"
     }
   }
 
@@ -32,13 +34,15 @@ class HomeView extends Component {
     return (
       <>
         <section className="section-city-bg">
-          <div className="city-bg"></div>
+          <div className="city-bg" aria-label="Background image of a desk"></div>
         </section>
 
         <div className="home-content">
           <h2 className="title-main">Events are waiting for You!</h2>
 
-          <button className="signup" onClick={()=>{this.props.login(); this.props.changeNav(); this.hidebutton();}}>Sign In with Google</button>
+          <button title="Button that leads to google sign in" className="signup" onClick={()=>{this.props.login(); this.props.changeNav(); this.hidebutton();}}>Sign In with Google</button>
+          <Link to="/City-Meetup/Events" className="red-event" title="A link that leads to the events page">Click for Events</Link>
+          <div className="arrow" aria-label="Image pointing to a button to sign in"></div>
           <section className="section-2">
             <div className="pic-1"></div>
             <div className="about-box">

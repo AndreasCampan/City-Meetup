@@ -24,7 +24,7 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount(){
     window.scrollTo(0, 0)
     this.mounted = true;
 
@@ -43,10 +43,30 @@ class App extends Component {
 
   changeNav(){
     if(this.state.fullNav === false){
+      if(this.state.events.length === 0){
       setTimeout(() => {this.setState({fullNav: true})}, 1000)
+      } else {
+        this.setState({fullNav: true})
+      }
     } else {
       this.setState({fullNav: false})
     }
+  }
+
+  signOut = () => {
+    localStorage.removeItem('locations');
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('lastEvents');
+    this.setState({
+      events: [],
+      locations: [],
+      eventsToShow: 32,
+      eventsLocFilt: [],
+      numFilteredList: [],
+      errorText: '',
+      fullNav: false
+    })
+    return window.location = '/City-Meetup';
   }
 
   getData = () => {
@@ -129,7 +149,7 @@ class App extends Component {
         <Route exact path="/City-Meetup/" render={() => {
           return (
             <>
-              <NavView fullNav={this.state.fullNav} />
+              <NavView fullNav={this.state.fullNav} signOut={this.signOut} />
               <HomeView login={()=>{this.login()}} changeNav={()=>{this.changeNav()}} fullNav={this.state.fullNav} />
               <FooterView />
             </>
@@ -139,7 +159,7 @@ class App extends Component {
         <Route exact path="/City-Meetup/Events" render={() => {
           return (
             <>
-              <NavView fullNav={this.state.fullNav}/>
+              <NavView fullNav={this.state.fullNav} signOut={this.signOut}/>
               <EventView state={this.state} updateEvents={this.updateEvents} updateEventNum={this.updateEventNum} login={this.login} getData={this.getData}/>
             </>
           )
