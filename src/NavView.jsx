@@ -3,7 +3,12 @@ import './App.css';
 import { Link } from "react-router-dom";
 
 class NavView extends Component {
-
+  constructor(){
+    super();
+    this.state = {
+      show: false
+    }
+  }
   componentDidMount(){
     this.extraNav()
   }
@@ -14,11 +19,19 @@ class NavView extends Component {
 
   mobileMenu() {
     let desktopMenu = document.querySelector(".mylinks");
-
-    if(desktopMenu.style.display === "flex"){
-      desktopMenu.style.display = "none"
+    console.log(this.state.show)
+    if(this.state.show === false){
+      this.setState({
+        show: true
+      })
+      desktopMenu.style.transform = "translateY(0px)"
+      
     } else {
-      desktopMenu.style.display = "flex"
+      console.log('In here')
+      desktopMenu.style.transform = "translateY(-160px)"
+      this.setState({
+        show: false
+      })
     }
   }
 
@@ -34,7 +47,8 @@ class NavView extends Component {
   
   render() {
     return (
-      <nav className="navbar">
+      <nav>
+        <div className="navbar"></div>
         <div className="Nav-title"><h1>City-Meetup</h1></div>
         <button className="mobile-menu-bttn" onClick={() => {
           this.mobileMenu();
@@ -43,6 +57,7 @@ class NavView extends Component {
           <div className="mobilebar-two"></div>
           <div className="mobilebar-three"></div>
         </button>
+        
         <div className="mylinks">
           <Link to="/City-Meetup/" className="links">Home</Link>
           <Link to="/City-Meetup/Events" className="links" id="eventLink">Events</Link>

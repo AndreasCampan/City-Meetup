@@ -1,27 +1,12 @@
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
 
-const COLORS = ['#d61313', '#494949', '#00C49F', '#365c89', '#FFBB28', '#FF8042',];
+const COLORS = ['#d61313', '#494949','#365c89', '#00C49F', '#FFBB28', '#fb5d04'];
 
-const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
-
-  const radius = innerRadius + (outerRadius - innerRadius) * 0.55;
-  const x = cx + radius * Math.cos(-midAngle * RADIAN);
-  const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
-  return (
-    <text x={x } y={y} fill="#fff" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-      {` ${(percent * 100).toFixed(0)}%`}
-    </text>
-  );
-};
 
  class EventGenre extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/pie-chart-with-customized-label-dlhhj';
-
    getData = () => {
-    const genres = ['React', 'JavaScript', 'Node', 'jQuery', 'AngularJS'];
+    const genres = ['JavaScript', 'React', 'Node', 'jQuery', 'Angular', 'Mongo'];
     const summary = this.props.events.map((event) => {
       const eventSummary = event.summary;
       return { eventSummary };
@@ -29,9 +14,9 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
     const data = genres.map((genre) => {
       const name = genre;
-
+      console.log(summary)
       const value = summary.filter((summary) =>
-        summary.eventSummary.split(' ').includes(name)
+        summary.eventSummary.indexOf(name) !== -1
       ).length;
 
       return { name, value };
@@ -42,17 +27,21 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
   render() {
     return (
-      <ResponsiveContainer height={200}>
+      <>
+      <h3 className="title-2">Type of Events</h3>
+      <ResponsiveContainer height={280} className="text-1">
         <PieChart>
+          <Legend verticalAlign="top" height={50}/>
           <Pie data={this.getData()} cx="50%" cy="50%"
-            labelLine={false} label={renderCustomizedLabel}
-            outerRadius={80} fill="#8884d8" dataKey="value">
+            labelLine={true} label={({ name, percent }) => `${(percent * 100).toFixed(0)}%\u00A0`}
+            outerRadius={70} fill="#8884d8" dataKey="value">
             {this.getData().map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell key={`cell-${index}`} fill={COLORS[index]} />
             ))}
           </Pie>
         </PieChart>
       </ResponsiveContainer>
+      </>
     );
   }
 }

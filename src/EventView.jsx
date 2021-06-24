@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-
 import EventGenre from './EventGenre';
+import EventChart from './EventChart';
 import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberofEvents from './NumberofEvents';
@@ -45,22 +44,16 @@ class EventView extends Component {
           <CitySearch locations={locations} updateEvents={this.props.updateEvents} />
           <NumberofEvents eventsToShow={eventsToShow} updateEventNum={this.props.updateEventNum} text={errorText}/> 
         </div>
-        <h3 className="title-1">Events in each city</h3>
 
         <div className="data-vis-wrapper">
-          <EventGenre events={numFilteredList}/>
-          <ResponsiveContainer height={400}>
-            <ScatterChart margin={{top: 20, right: 20, bottom: 20, left: 20 }} >
-              <CartesianGrid />
-              <XAxis type="category" dataKey="city" name="City" />
-              <YAxis allowDecimals={false} type="number" dataKey="number" name="Number of Events" />
-              <ZAxis range={[150, 600]} />
-              <Tooltip cursor={{ stroke: 'red', strokeWidth: 5 }}/>
-              <Scatter data={this.props.getData()} fill="#d61313" />
-            </ScatterChart>
-          </ResponsiveContainer>
+          <div className="chart1-box">
+            <EventGenre events={numFilteredList}/>
+          </div>
+          <div className="chart2-box">
+           <EventChart state={this.props.state} getData={this.props.getData}/>
+          </div>
         </div>
-        <EventList events={numFilteredList}/>
+        <EventList events={numFilteredList} />
         <FooterView />
       </div>
     );

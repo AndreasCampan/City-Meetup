@@ -1,5 +1,93 @@
 export const mockData = [
      {
+     "id": "4eklhs9gh132323khrvkld3e_20200519T140000Z",
+     "status": "confirmed",
+     "htmlLink": "https://www.google.com/calendar/event?eid=NGVhaHM5Z2hraHJ2a2xkNzJob2d1OXBoM2VfMjAyMDA1MTlUMTQwMDAwWiBmdWxsc3RhY2t3ZWJkZXZAY2FyZWVyZm91bmRyeS5jb20",
+
+     "summary": "Learn JavaScript!",
+     "description": "Have you wondered how you can ask Google to show you the list of the top ten must-see places in London? And how Google presents you the list? How can you submit the details of an application? Well, JavaScript is doing these. :) \n\nJavascript offers interactivity to a dull, static website. Come, learn JavaScript with us and make those beautiful websites.",
+     "location": "Nairobi, Kenya",
+     "creator": {
+     "email": "fullstackwebdev@careerfoundry.com",
+     "self": true
+     },
+     "start": {
+     "dateTime": "2020-05-19T16:00:00+02:00",
+     "timeZone": "Europe/Berlin"
+     }
+     },
+     {
+     "id": "4eaklhs9gh13232hogu9ph3e_20200519T140000Z",
+     "status": "confirmed",
+     "htmlLink": "https://www.google.com/calendar/event?eid=NGVhaHM5Z2hraHJ2a2xkNzJob2d1OXBoM2VfMjAyMDA1MTlUMTQwMDAwWiBmdWxsc3RhY2t3ZWJkZXZAY2FyZWVyZm91bmRyeS5jb20",
+
+     "summary": "Learn Node,",
+     "description": "Have you wondered how you can ask Google to show you the list of the top ten must-see places in London? And how Google presents you the list? How can you submit the details of an application? Well, JavaScript is doing these. :) \n\nJavascript offers interactivity to a dull, static website. Come, learn JavaScript with us and make those beautiful websites.",
+     "location": "Bangkok, Thailand",
+     "creator": {
+     "email": "fullstackwebdev@careerfoundry.com",
+     "self": true
+     },
+     "start": {
+     "dateTime": "2020-05-19T16:00:00+02:00",
+     "timeZone": "Europe/Berlin"
+     }
+     },
+     {
+     "id": "4eaklhs9gh1323123khrvkld72hogu9ph3e_20200519T140000Z",
+     "status": "confirmed",
+     "htmlLink": "https://www.google.com/calendar/event?eid=NGVhaHM5Z2hraHJ2a2xkNzJob2d1OXBoM2VfMjAyMDA1MTlUMTQwMDAwWiBmdWxsc3RhY2t3ZWJkZXZAY2FyZWVyZm91bmRyeS5jb20",
+
+     "summary": "Learn Angular",
+     "description": "Have you wondered how you can ask Google to show you the list of the top ten must-see places in London? And how Google presents you the list? How can you submit the details of an application? Well, JavaScript is doing these. :) \n\nJavascript offers interactivity to a dull, static website. Come, learn JavaScript with us and make those beautiful websites.",
+     "location": "Moscow, Russia",
+     "creator": {
+     "email": "fullstackwebdev@careerfoundry.com",
+     "self": true
+     },
+     "start": {
+     "dateTime": "2020-05-19T16:00:00+02:00",
+     "timeZone": "Europe/Berlin"
+     }
+     },
+
+     {
+     "id": "4eaklhs9ghkh123123rvkld72hogu9ph3e_20200519T140000Z",
+     "status": "confirmed",
+     "htmlLink": "https://www.google.com/calendar/event?eid=NGVhaHM5Z2hraHJ2a2xkNzJob2d1OXBoM2VfMjAyMDA1MTlUMTQwMDAwWiBmdWxsc3RhY2t3ZWJkZXZAY2FyZWVyZm91bmRyeS5jb20",
+
+     "summary": "Learn JavaScript",
+     "description": "Have you wondered how you can ask Google to show you the list of the top ten must-see places in London? And how Google presents you the list? How can you submit the details of an application? Well, JavaScript is doing these. :) \n\nJavascript offers interactivity to a dull, static website. Come, learn JavaScript with us and make those beautiful websites.",
+     "location": "Mumbai, Maharashtra, India",
+     "creator": {
+     "email": "fullstackwebdev@careerfoundry.com",
+     "self": true
+     },
+     "start": {
+     "dateTime": "2020-05-19T16:00:00+02:00",
+     "timeZone": "Europe/Berlin"
+     }
+     },
+
+     {
+     "id": "4eaklhs9ghkhrvkld72hogu9ph3e_20200519T140000Z",
+     "status": "confirmed",
+     "htmlLink": "https://www.google.com/calendar/event?eid=NGVhaHM5Z2hraHJ2a2xkNzJob2d1OXBoM2VfMjAyMDA1MTlUMTQwMDAwWiBmdWxsc3RhY2t3ZWJkZXZAY2FyZWVyZm91bmRyeS5jb20",
+
+     "summary": "Learn JavaScript",
+     "description": "Have you wondered how you can ask Google to show you the list of the top ten must-see places in London? And how Google presents you the list? How can you submit the details of an application? Well, JavaScript is doing these. :) \n\nJavascript offers interactivity to a dull, static website. Come, learn JavaScript with us and make those beautiful websites.",
+     "location": "Tokyo, Japan",
+     "creator": {
+     "email": "fullstackwebdev@careerfoundry.com",
+     "self": true
+     },
+     "start": {
+     "dateTime": "2020-05-19T16:00:00+02:00",
+     "timeZone": "Europe/Berlin"
+     }
+     },
+
+     {
      "kind": "calendar#event",
      "etag": "\"3181161784712000\"",
      "id": "4eahs9ghkhrvkld72hogu9ph3e_20200519T140000Z",

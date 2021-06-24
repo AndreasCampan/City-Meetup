@@ -46,7 +46,7 @@ class ErrorAlert extends Alert {
   getStyle = () => {
     return {
       color: this.color,
-      fontWeight: '700',
+      fontWeight: '500',
       fontSize: '1em',
     };
   }
