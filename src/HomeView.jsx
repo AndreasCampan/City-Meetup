@@ -40,11 +40,21 @@ class HomeView extends Component {
         <div className="home-content">
           <h2 className="title-main">Events are waiting for You!</h2>
 
-          <button title="Button that leads to google sign in" className="signup" onClick={()=>{this.props.login(); this.props.changeNav(); this.hidebutton();}}>Sign In with Google</button>
-          <Link to="/City-Meetup/Events" className="red-event" title="A link that leads to the events page">Click for Events</Link>
+          <button title="Sign in with Google" className="signup" onClick={()=>{this.props.login(); this.props.changeNav(); this.hidebutton();}}>
+          <span style={{"color":"#4285F4"}} >G</span>
+          <span style={{"color":"#EA4335"}} >o</span>
+          <span style={{"color":"#FBBC05"}} >o</span>
+          <span style={{"color":"#4285F4"}} >g</span>
+          <span style={{"color":"#34A853"}} >l</span>
+          <span style={{"color":"#EA4335"}} >e </span>
+          Sign-in
+          </button>
+
+          <Link to="/City-Meetup/Events" className="red-event" title="A link that leads to the events page">Click for Events
+          </Link>
           <div className="arrow" aria-label="Image pointing to a button to sign in"></div>
           <section className="section-2">
-            <div className="pic-1"></div>
+            <div className="pic-1" alt="Image relating to the TDD cycle"></div>
             <div className="about-box">
               <h3 className="title-1">About This Site</h3>
               <p className="para-1">This progressive web application (PWA) was built following a test-driven development (TDD) technique and uses serverless technology for backend services. 
@@ -66,7 +76,7 @@ class HomeView extends Component {
                 Check out more on <a className="inner-links" href="https://auth0.com/docs/protocols/protocol-oauth2" target="_blank" rel="noreferrer" alt="A link directing the user to Oauth documentation">OAuth</a>. 
               </p>
             </div>
-            <div className="pic-2"></div>
+            <div className="pic-2" alt="Image relating to the workings of OAuth"></div>
           </section>
 
           <section className="section-4">

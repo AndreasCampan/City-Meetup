@@ -46,12 +46,14 @@ class NavView extends Component {
   }
 
   extraNav(){
+    const link = document.getElementById("eventLink");
+      const sign = document.getElementById("signout");
     if(this.props.fullNav === false){
-      const link = document.getElementById("eventLink");
       link.style.display = "none"
+      sign.style.display = "none"
     } else {
-      const link = document.getElementById("eventLink");
       link.style.display = "inline"
+      sign.style.display = "inline"
     }    
   }
   
@@ -60,9 +62,7 @@ class NavView extends Component {
       <nav>
         <div className="navbar"></div>
         <a href="https://andreascampan.github.io/City-Meetup/" className="Nav-title"><h1>City-Meetup</h1></a>
-        <button title="hamburger menu button" className="mobile-menu-bttn" onClick={() => {
-          this.mobileMenu();
-        }}>
+        <button title="hamburger menu button" className="mobile-menu-bttn" onClick={() => {this.mobileMenu();}}>
           <div className="mobilebar-one"></div>
           <div className="mobilebar-two"></div>
           <div className="mobilebar-three"></div>
