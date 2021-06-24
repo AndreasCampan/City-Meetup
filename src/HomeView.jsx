@@ -10,7 +10,6 @@ class HomeView extends Component {
 
     window.addEventListener('scroll', () => {
       background.style.opacity = `${1 - window.pageYOffset * 0.0015}`;
-      console.log('home view mount')
       if(window.pageYOffset > 300){
         background.style.opacity = '0.4';
       }

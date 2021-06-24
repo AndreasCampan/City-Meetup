@@ -27,7 +27,7 @@ class App extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
     this.mounted = true;
-    
+
     const token = localStorage.getItem("access_token");
     if(token){
      this.setState({fullNav: true});
@@ -48,6 +48,16 @@ class App extends Component {
       await this.setState({fullNav: false});
     }
   }
+
+  getData = () => {
+    const { locations, numFilteredList } = this.state;
+    const data = locations.map((location)=>{
+      const number = numFilteredList.filter((event) => event.location === location).length
+      const city = location.split(', ').shift()
+      return {city, number};
+    })
+    return data;
+  };
 
   login(){
     getEvents()
@@ -130,7 +140,7 @@ class App extends Component {
           return (
             <>
               <NavView fullNav={this.state.fullNav}/>
-              <EventView state={this.state} updateEvents={this.updateEvents} updateEventNum={this.updateEventNum} login={this.login} />
+              <EventView state={this.state} updateEvents={this.updateEvents} updateEventNum={this.updateEventNum} login={this.login} getData={this.getData}/>
             </>
           )
         }} />

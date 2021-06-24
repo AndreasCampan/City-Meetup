@@ -169,11 +169,13 @@ a:hover.inner-links {
   background-color: #d61313;
   border: none;
   border-radius: 4px;
+  margin: 10px 0;
 }
 
 .signup:hover {
   color: #d61313;
   background-color: #fff;
+  border: 3px solid #d61313;
 }
 
 
@@ -218,7 +220,7 @@ a:hover.inner-links {
 
 .title-main {
   color:#d61313;
-  margin: 35px 0 5px;
+  margin: 35px 0 10px;
   font-size: 2.2em;
   text-align: center;
   transition: all 0.4s ease-in-out;
@@ -396,12 +398,9 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 1000px;
 }
 
-.data-vis-wrapper .recharts-responsive-container {
-  min-width: 100%;
-  display: flex;
-}
 
 .recharts-surface {
   overflow: visible;
@@ -499,7 +498,7 @@ ul {
   }
 
   .title-main {
-    margin: 30px 0 5px;
+    margin: 30px 0 10px;
     font-size: 2.1em;
 
   }
