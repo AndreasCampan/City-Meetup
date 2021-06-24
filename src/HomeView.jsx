@@ -59,7 +59,7 @@ class HomeView extends Component {
               <h3 className="title-1">About This Site</h3>
               <p className="para-1">This progressive web application (PWA) was built following a test-driven development (TDD) technique and uses serverless technology for backend services. 
               <br/><br/>
-              The project is created with React. For more information check out the project repository on <a className="inner-links" href="https://github.com/AndreasCampan/City-Meetup" target="_blank" rel="noreferrer" alt="A link directing the user to the project repository on github">Github</a></p>
+              The project is created with React. For more information check out the project repository on <a className="inner-links" href="https://github.com/AndreasCampan/City-Meetup" target="_blank" rel="noreferrer" alt="A link directing the user to the project repository on github">Github</a>.</p>
             </div>
           </section>
 
@@ -83,8 +83,9 @@ class HomeView extends Component {
             <div className="privacy-box">
               <h3 className="title-1">Privacy</h3>
               <p className="para-3">
-                This progressive web application is used specifically for demonstrative and educational purposes and has no commercial intent or use. No personal data is collected or saved and the calendar accessed is not a personal calendar, but pertaining to CareerFoundry's web development events. 
+                This progressive web app is used specifically for demonstrative and educational purposes only. The calendar accessed is not a personal calendar, but pertaining to CareerFoundry's web development events. For more information pertaining to your privacy check our
               </p>
+              <a href="https://andreascampan.github.io/City-Meetup/privacy.html" className="inner-links" target="blank" rel="nofollow noopener" > Privacy policy </a>
             </div>
           </section>
         </div>
