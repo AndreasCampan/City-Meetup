@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/City-Meetup/static/css/main.0d6f1523.chunk.css",
+    "main.css": "/City-Meetup/static/css/main.8badc70f.chunk.css",
     "main.js": "/City-Meetup/static/js/main.71c76eb7.chunk.js",
     "main.js.map": "/City-Meetup/static/js/main.71c76eb7.chunk.js.map",
     "runtime-main.js": "/City-Meetup/static/js/runtime-main.400d9cdf.js",
@@ -12,7 +12,7 @@
     "index.html": "/City-Meetup/index.html",
     "service-worker.js": "/City-Meetup/service-worker.js",
     "service-worker.js.map": "/City-Meetup/service-worker.js.map",
-    "static/css/main.0d6f1523.chunk.css.map": "/City-Meetup/static/css/main.0d6f1523.chunk.css.map",
+    "static/css/main.8badc70f.chunk.css.map": "/City-Meetup/static/css/main.8badc70f.chunk.css.map",
     "static/js/2.6ee10a10.chunk.js.LICENSE.txt": "/City-Meetup/static/js/2.6ee10a10.chunk.js.LICENSE.txt",
     "static/media/AC-Logo.7d2b5664.png": "/City-Meetup/static/media/AC-Logo.7d2b5664.png",
     "static/media/App.css": "/City-Meetup/static/media/tdd-circle-of-life.f9a296f6.jpg"
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.400d9cdf.js",
     "static/js/2.6ee10a10.chunk.js",
-    "static/css/main.0d6f1523.chunk.css",
+    "static/css/main.8badc70f.chunk.css",
     "static/js/main.71c76eb7.chunk.js"
   ]
 }
