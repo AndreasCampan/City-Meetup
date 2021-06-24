@@ -41,11 +41,11 @@ class App extends Component {
     }
   }
 
-  async changeNav(){
+  changeNav(){
     if(this.state.fullNav === false){
-      await this.setState({fullNav: true});
+      setTimeout(() => {this.setState({fullNav: true})}, 1000)
     } else {
-      await this.setState({fullNav: false});
+      this.setState({fullNav: false})
     }
   }
 

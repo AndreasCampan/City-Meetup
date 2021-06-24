@@ -14,7 +14,6 @@ const COLORS = ['#d61313', '#494949','#365c89', '#00C49F', '#FFBB28', '#fb5d04']
 
     const data = genres.map((genre) => {
       const name = genre;
-      console.log(summary)
       const value = summary.filter((summary) =>
         summary.eventSummary.indexOf(name) !== -1
       ).length;

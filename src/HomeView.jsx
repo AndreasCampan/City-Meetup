@@ -24,7 +24,7 @@ class HomeView extends Component {
   hidebutton() {
     if(this.props.fullNav === true) {
       const signup = document.querySelector(".signup");
-      signup.style.display = "none";
+      signup.style.display = "none"
     }
   }
 

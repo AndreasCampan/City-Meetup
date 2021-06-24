@@ -1,6 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
 
 * {
+  font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -52,7 +53,7 @@ a:hover.inner-links {
 
 .Nav-title {
   position: fixed;
-  top: 4px;
+  top: 6px;
   left: 15px;
   font-size: 1.5em;
   font-weight: 900;
@@ -393,7 +394,7 @@ ul {
 
 .text-1 {
   font-size: 1.1em;
-  font-weight: 500;
+  font-weight: 600;
   padding-top: 40px;
 }
 
@@ -532,7 +533,7 @@ ul {
 
   .text-1 {
     font-size: 0.9em;
-    font-weight: 500;
+    font-weight: 600;
     padding-top: 0;
   }
   
@@ -565,7 +566,7 @@ ul {
   }
   
   .Nav-title {
-    top: 7px;
+    top: 9px;
     font-size: 1.3em;
   }
 
@@ -575,6 +576,7 @@ ul {
   
   .mylinks {
     padding-right: 5px;
+    transform: translateY(0);
   }
 
   .links {
@@ -612,7 +614,7 @@ ul {
 
   .title-main {
     margin: 20px 0 10px;
-    font-size: 1.8em;
+    font-size: 1.65em;
   }
   
   .title-1 {
@@ -623,6 +625,11 @@ ul {
 
   .what-can-you-do-box, .about-box, .privacy-box {
     font-size: 1.1em;
+  }
+
+  .Nav-title {
+    top: 9px;
+    font-size: 1.3em;
   }
 
   .mobile-menu-bttn {
@@ -663,6 +670,7 @@ ul {
     margin-top: 4px;
   }
   
+
   .mylinks {
     display: flex;
     flex-direction: column;
@@ -684,11 +692,12 @@ ul {
     padding: 5px 0;
     margin: 0;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 800;
     color: #d61313;
     border-right: 3px solid #d61313;
     border-left: 3px solid #d61313;
     border-bottom: 3px solid #d61313;
+    border-top: none;
     text-align: center;
     box-shadow: none;
     border-radius: 0;
@@ -698,11 +707,13 @@ ul {
     padding: 5px 0;
     margin: 0;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 800;
     color: #d61313;
+    background-color: rgb(226, 235, 248);
     border-right: 3px solid #d61313;
     border-left: 3px solid #d61313;
     border-bottom: 3px solid #d61313;
+    border-top: none;
     box-shadow: none;
     border-radius: 0;
   }
