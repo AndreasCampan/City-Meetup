@@ -71,7 +71,11 @@ class HomeView extends Component {
               </p>
               <br />
               <p className="para-2">
-                The application even works offline, retrieving and displaying stored data from a previous session.
+                When signing in with your google account, none of your user data is retrieved or used. The sign in process is simply for granting you access to CareerFoundry's web development events.
+              </p>
+              <br />
+              <p className="para-2">
+                The application also works offline, retrieving and displaying stored data from a previous session.
                 <br/>
                 Check out more on <a className="inner-links" href="https://auth0.com/docs/protocols/protocol-oauth2" target="_blank" rel="noreferrer" alt="A link directing the user to Oauth documentation">OAuth</a>. 
               </p>
@@ -85,7 +89,7 @@ class HomeView extends Component {
               <p className="para-3">
                 This progressive web app is used specifically for demonstrative and educational purposes only. The calendar accessed is not a personal calendar, but pertaining to CareerFoundry's web development events. For more information pertaining to your privacy check our
               </p>
-              <a href="https://andreascampan.github.io/City-Meetup/privacy.html" className="inner-links" target="blank" rel="nofollow noopener" > Privacy policy </a>
+              <a href="https://andreascampan.github.io/City-Meetup/privacy.html" className="inner-links" target="blank" rel="nofollow noopener"> Privacy policy </a>
             </div>
           </section>
         </div>
