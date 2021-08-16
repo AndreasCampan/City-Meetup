@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/City-Meetup/static/css/main.77e8aa88.chunk.css",
-    "main.js": "/City-Meetup/static/js/main.3ffa1494.chunk.js",
-    "main.js.map": "/City-Meetup/static/js/main.3ffa1494.chunk.js.map",
+    "main.js": "/City-Meetup/static/js/main.daaace46.chunk.js",
+    "main.js.map": "/City-Meetup/static/js/main.daaace46.chunk.js.map",
     "runtime-main.js": "/City-Meetup/static/js/runtime-main.400d9cdf.js",
     "runtime-main.js.map": "/City-Meetup/static/js/runtime-main.400d9cdf.js.map",
-    "static/js/2.6ee10a10.chunk.js": "/City-Meetup/static/js/2.6ee10a10.chunk.js",
-    "static/js/2.6ee10a10.chunk.js.map": "/City-Meetup/static/js/2.6ee10a10.chunk.js.map",
+    "static/js/2.44ab514b.chunk.js": "/City-Meetup/static/js/2.44ab514b.chunk.js",
+    "static/js/2.44ab514b.chunk.js.map": "/City-Meetup/static/js/2.44ab514b.chunk.js.map",
     "static/js/3.3bd41909.chunk.js": "/City-Meetup/static/js/3.3bd41909.chunk.js",
     "static/js/3.3bd41909.chunk.js.map": "/City-Meetup/static/js/3.3bd41909.chunk.js.map",
     "index.html": "/City-Meetup/index.html",
     "service-worker.js": "/City-Meetup/service-worker.js",
     "service-worker.js.map": "/City-Meetup/service-worker.js.map",
     "static/css/main.77e8aa88.chunk.css.map": "/City-Meetup/static/css/main.77e8aa88.chunk.css.map",
-    "static/js/2.6ee10a10.chunk.js.LICENSE.txt": "/City-Meetup/static/js/2.6ee10a10.chunk.js.LICENSE.txt",
+    "static/js/2.44ab514b.chunk.js.LICENSE.txt": "/City-Meetup/static/js/2.44ab514b.chunk.js.LICENSE.txt",
     "static/media/AC-Logo.7d2b5664.png": "/City-Meetup/static/media/AC-Logo.7d2b5664.png",
     "static/media/App.css": "/City-Meetup/static/media/tdd-circle-of-life.f9a296f6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.400d9cdf.js",
-    "static/js/2.6ee10a10.chunk.js",
+    "static/js/2.44ab514b.chunk.js",
     "static/css/main.77e8aa88.chunk.css",
-    "static/js/main.3ffa1494.chunk.js"
+    "static/js/main.daaace46.chunk.js"
   ]
 }
